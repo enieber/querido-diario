@@ -13,6 +13,7 @@ defmodule Filecry do
 
   """
   def read(file) do
-    File.read(file)
+    {:ok, test} = File.read(file)
+    IO.puts test
   end
 end
