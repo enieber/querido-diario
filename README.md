@@ -1,6 +1,9 @@
 # Filecry
 
-**TODO: Add description**
+**TODO**
+
+[] Add description
+[] Make test
 
 ## Installation
 
