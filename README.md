@@ -2,8 +2,8 @@
 
 **TODO**
 
-[] Add description
-[] Make test
+- [ ] Add description
+- [ ] Make test
 
 ## Installation
 
