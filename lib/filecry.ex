@@ -1,4 +1,7 @@
+require Cipher.Helpers, as: H  # the cool way
+
 defmodule Filecry do
+  alias Cipher, as: C
   @moduledoc """
   Documentation for Filecry.
   """
@@ -14,6 +17,8 @@ defmodule Filecry do
   """
   def read(file) do
     {:ok, test} = File.read(file)
-    IO.puts test
+    test
+    |> C.encrypt
+    |> IO.puts
   end
 end
