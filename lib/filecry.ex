@@ -17,8 +17,7 @@ defmodule Filecry do
   """
   def read(file) do
     {:ok, test} = File.read(file)
-    test
-    |> C.encrypt
-    |> IO.puts
+    cryptContent = C.encrypt(test)
+    File.write("hello.txt", cryptContent)
   end
 end
