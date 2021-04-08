@@ -1,24 +1,3 @@
-# Filecry
+# Querido diario
 
-**TODO**
-
-- [ ] Add description
-- [ ] Make test
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `filecry` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:filecry, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/filecry](https://hexdocs.pm/filecry).
-
+Esse projeto consiste em criptografar o conteudo de um arquivo.txt e começou a ser feito quando eu queria escrever em um diario digital
