@@ -1,23 +1,27 @@
-require Cipher.Helpers, as: H  # the cool way
-
 defmodule Filecry do
-  alias Cipher, as: C
   @moduledoc """
-  Documentation for Filecry.
+  Documentation for Filecry project.]
+
+  Provide a function `read/1` to read and cryptgraph file
   """
 
+
   @doc """
-  File Cry
+  Cryptograph file function.
+
+  ## Parameters
+
+    - file: String with path of file.
 
   ## Examples
 
-      iex> Filecry.read()
-      :world
+      iex> Filecry.read("./file.txt")
+      :ok
 
   """
   def read(file) do
     {:ok, test} = File.read(file)
-    cryptContent = C.encrypt(test)
-    File.write("hello.txt", cryptContent)
+    cryptContent = Cipher.encrypt(test)
+    File.write("file-crypt", cryptContent)
   end
 end
